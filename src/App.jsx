@@ -1,20 +1,29 @@
 
 import Demo from "./demo"
+
 function App() {
 
-  const city=['kolkata','Delhi','Dhaka','Rajshahi']
-  return (
-    <>
-    <ol>
-      {
-        city.map((item,i)=>{
-          return <li key={i.toString()}>{item}</li>
-        })
-      }
-    </ol>
-    <Demo/>
-    </>
-  )
+
+  const status=true;
+  if(status==true){
+    return (
+      <>
+      <h1>login status</h1>
+      <button>LogOut</button>
+      <div><Demo/></div>
+      </>
+      
+    )
+      
+  }else{
+   return(
+    <div>
+       <h1>login status</h1>
+      <button>LogIn</button>
+    </div>
+   )
+  }
+  
 }
 
 export default App
