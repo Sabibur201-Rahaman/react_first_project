@@ -1,30 +1,28 @@
 
 import Demo from "./demo"
-
+const statusloginBtn=(status=true)=>{
+if(status){
+return(
+  <h1>LogOut Btn</h1>
+)
+}else{
+  return<h1>LogIn</h1>
+}
+}
 function App() {
 
 
-  const status=true;
-  if(status==true){
+  
+  
     return (
       <>
-      <h1>login status</h1>
-      <button>LogOut</button>
-      <div><Demo/></div>
+      <h2>Login status</h2>
+      {statusloginBtn(true)}
+      <Demo/>
       </>
       
     )
-      
-  }else{
-   return(
-    <div>
-       <h1>login status</h1>
-      <button>LogIn</button>
-    </div>
-   )
-  }
-  
-}
-
+   
+    }
 export default App
  
