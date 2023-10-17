@@ -3,7 +3,13 @@ function App() {
   return(
     <div>
       <h1>login status</h1>
-    {  status && <button>logOut</button>}
+    {(()=>{
+      if(status==true){
+       return <button>LogOut</button>
+      }else{
+       return <button>LogIn</button>
+      }
+    })()}
     </div>
   )
   
