@@ -1,7 +1,11 @@
 function App() {
-  const status = false;
+  const status = true;
   return(
-  <div>{status ? <button>LogOut</button> : <button>LogIn</button>}</div>
+    <div>
+      <h1>login status</h1>
+    {  status && <button>logOut</button>}
+    </div>
   )
+  
 }
 export default App;
