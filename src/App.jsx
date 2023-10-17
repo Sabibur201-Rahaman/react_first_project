@@ -1,15 +1,9 @@
+import Hero from "./component/Hero";
 function App() {
-  const status = true;
   return(
     <div>
-      <h1>login status</h1>
-    {(()=>{
-      if(status==true){
-       return <button>LogOut</button>
-      }else{
-       return <button>LogIn</button>
-      }
-    })()}
+      <Hero title='we are learning react js using javascript'des='This is ostad platform'/>
+
     </div>
   )
   
