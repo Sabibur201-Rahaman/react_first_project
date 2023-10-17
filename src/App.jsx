@@ -1,28 +1,11 @@
 
-import Demo from "./demo"
-const statusloginBtn=(status=true)=>{
-if(status){
-return(
-  <h1>LogOut Btn</h1>
-)
-}else{
-  return<h1>LogIn</h1>
-}
-}
+
 function App() {
-
-
-  
-  
-    return (
-      <>
-      <h2>Login status</h2>
-      {statusloginBtn(true)}
-      <Demo/>
-      </>
-      
-    )
-   
+const status=false;
+switch(status){
+case true:return<button>LogOut</button>
+case false:return <button>LogIn</button>
+} 
     }
 export default App
  
